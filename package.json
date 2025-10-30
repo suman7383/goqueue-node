@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Node.js client SDK for GoQueue server (supports JSON and Protobuf)",
   "license": "ISC",
-  "author": "sumanmukherjee2001@gmail.com",
+  "author": "Suman Mukherjee",
   "type": "commonjs",
   "main": "dist/client.js",
   "types": "dist/client.d.ts",
@@ -17,6 +17,17 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suman7383/goqueue-node.git"
+  },
+  "keywords": [
+    "goqueue",
+    "client",
+    "queue",
+    "protobuf",
+    "sdk"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && node scripts/copyProtos.js",
@@ -29,6 +40,7 @@
     "protobufjs": "^7.5.4"
   },
   "devDependencies": {
-    "protobufjs-cli": "^1.1.3"
+    "protobufjs-cli": "^1.1.3",
+    "typescript": "^5.9.3"
   }
 }
