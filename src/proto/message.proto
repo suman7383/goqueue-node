@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message Produce {
+    string message = 1;
+}
+
+message ProduceResponse {
+    int64 id = 1;
+}
+
+message Consume {
+    int64 id = 1;
+    string payload = 2;
+    bool acked = 3;
+    string timestamp = 4;
+    int32 retries = 5;
+}
